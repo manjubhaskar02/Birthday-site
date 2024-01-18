@@ -51,17 +51,17 @@ body {
 }
 
 .outside {
-    background-color: blanchedalmond;
+    background-color: rgb(236, 204, 158);
     box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
     position: absolute;
     backface-visibility: hidden;
 }
 
 .outside h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: salmon;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .inside {
@@ -138,7 +138,7 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 0 0.8rem;
-    transform: rotateY(-200deg) rotateX(20deg);
+    transform: rotateY(-230deg) rotateX(20deg);
     margin: 100px 0px;
     /* position: absolute; */
 }
@@ -164,8 +164,13 @@ body {
 
 }
 
+/* .frames:nth-child(1):hover {
+    transform: rotateY(10deg) rotateX(0deg);
+    /* transform: rotateY(0deg); */
+
+/* } */
+
 .frames:nth-child(2) {
-    /* top: -210px; */
 
     background-color: goldenrod;
 }
