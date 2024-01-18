@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bodoni Moda', serif;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/images/bdaygif.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.card-container {
+    width: 100%;
+    perspective: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card {
+    width: 280px;
+    height: 360px;
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.block {
+    perspective: 800px;
+}
+
+.outside,
+.inside {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.outside {
+    background-color: blanchedalmond;
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.outside h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: salmon;
+    margin-bottom: 30px;
+}
+
+.inside {
+    background-color: rgb(255, 244, 79);
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.inside h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.bday-card {
+    width: 280px;
+    height: 360px;
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+
+
+.cakegif {
+    width: 280px;
+    height: 360px;
+
+}
+
+
+.cake {
+    width: 280px;
+    height: 360px;
+
+}
+
+.bday-card:hover {
+    transform: rotateY(180deg);
+}
+
+.outercake,
+.innercake {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+
+
+.outercake {
+    background-color: salmon;
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
+.innercake {
+    background-color: chocolate;
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+
+
+.frames {
+    width: 400px;
+    height: 150px;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0.8rem;
+    transform: rotateY(-200deg) rotateX(20deg);
+    margin: 100px 0px;
+    /* position: absolute; */
+}
+
+.frames img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.frames p {
+    font-size: 20px;
+    font-weight: bold;
+    transform: rotateY(180deg);
+}
+
+.frames:nth-child(1) {
+    position: absolute;
+    top: -120px;
+    z-index: -1;
+    background-color: coral;
+
+}
+
+.frames:nth-child(2) {
+    /* top: -210px; */
+
+    background-color: goldenrod;
+}
+
+.frames:nth-child(3) {
+    position: absolute;
+    top: 110px;
+    background-color: burlywood;
+
+}
+
+@media screen and (max-width:1025px) {
+    .card-container {
+        flex-direction: column;
+        gap: 100px;
+        margin: 40px;
+    }
+
+    .frames {
+        width: 300px;
+        margin: 150px 0px;
+    }
+}
